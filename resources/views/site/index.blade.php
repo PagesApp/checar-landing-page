@@ -190,11 +190,11 @@
                                     class="max-w-md mx-auto bg-[#D9792266] bg-opacity-10 mb-12 rounded-xl shadow-md overflow-hidden md:max-w-4xl">
                                     <div class="md:flex p-8 md:space-x-8">
                                         <div class="md:flex-shrink-0">
-                                            <img class="h-full w-full object-cover md:w-60 rounded"
-                                                src="{{ asset('images/logo-lagoa-santa.webp') }}" alt="Descrição da imagem">
+                                            <img class="h-full w-full object-contain rounded"
+                                                src="{{ asset('images/logo-v&c.webp') }}" alt="Descrição da imagem">
                                         </div>
                                         <div class="space-y-2">
-                                            <h1 class="text-center text-xl font-medium">Prefeitura de Lagoa Santa</h1>
+                                            <h1 class="text-center text-xl font-medium">V&C</h1>
                                             <p class="mt-6 md:mt-0">
                                                 A prefeitura de <b>Lagoa Santa</b> (MG) fez uso do Checar BPMN para a gestão
                                                 e
@@ -214,20 +214,13 @@
                                     class="max-w-md mx-auto bg-[#D9792266] bg-opacity-10 mb-12 rounded-xl shadow-md overflow-hidden md:max-w-4xl">
                                     <div class="md:flex p-8 md:space-x-8">
                                         <div class="md:flex-shrink-0">
-                                            <img class="h-full w-full object-cover md:w-60 rounded"
-                                                src="{{ asset('images/logo-lagoa-santa.webp') }}" alt="Descrição da imagem">
+                                            <img class="h-full w-full object-contain rounded"
+                                                src="{{ asset('images/logo-supliu-tech.webp') }}" alt="Descrição da imagem">
                                         </div>
                                         <div class="space-y-2">
-                                            <h1 class="text-center text-xl font-medium">Prefeitura de Lagoa Santa</h1>
+                                            <h1 class="text-center text-xl font-medium">Supliu Tech</h1>
                                             <p class="mt-6 md:mt-0">
-                                                A prefeitura de <b>Lagoa Santa</b> (MG) fez uso do Checar BPMN para a gestão
-                                                e
-                                                fiscalização de obras e manutenção da cidade. A plataforma permite que os
-                                                cidadãos façam requerimentos através de uma denúncia informando o local, CEP
-                                                e entregando um protocolo. Dentro da plataforma, o Checar permite que os
-                                                usuários da prefeitura criem fluxos, ordem de serviço, formulários dinâmicos
-                                                e façam relatórios das ações, além de acompanhar as tarefas de forma
-                                                intuitiva em um histórico de ações.
+                                                Empresa de desenvolvimento de aplicações web e mobile
                                             </p>
                                         </div>
                                     </div>
