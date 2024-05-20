@@ -20,6 +20,7 @@
             <th scope="col">#</th>
             <th scope="col">Nome</th>
             <th scope="col">Telefone</th>
+            <th scope="col">E-mail</th>
             <th scope="col">Acessado em</th>
             </tr>
         </thead>
@@ -29,6 +30,7 @@
                     <th scope="row">{{ $key + 1 }}</th>
                     <td>{{ $lead->name }}</td>
                     <td>{{ \JansenFelipe\Utils\Utils::mask($lead->phone, \JansenFelipe\Utils\Mask::TELEFONE) }}</td>
+                    <td>{{ $lead->email }}</td>
                     <td>{{ $lead->created_at->format('d/m/Y') }}</td>
                 </tr>
             @empty

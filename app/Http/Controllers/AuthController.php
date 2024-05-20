@@ -12,7 +12,7 @@ class AuthController extends Controller
     public function index()
     {
         if (auth()->check()) {
-            return redirect()->route('admin.login');
+            return redirect()->route('admin.lead');
         }
 
         return view('admin.login.index');
