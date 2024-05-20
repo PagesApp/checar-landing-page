@@ -69,7 +69,7 @@
                     <div class="transform translate-y-full transition-transform duration-200 ease-in-out hidden lg:hidden content-center flex-col w-full bg-brand-blue z-50 top-full py-4"
                         id="mobile-menu">
                         <ul class="list-reset flex flex-col items-center space-y-4 2xl:space-y-10">
-                            <li><a class="text-white" href="/">Home</a></li>
+                            <li><a class="text-white" href="{{ route('home') }}">Home</a></li>
                             <li><a class="text-white" href="#video">Vídeo</a></li>
                             <li><a class="text-white" href="#casos-de-sucesso">Casos de Sucesso</a></li>
                             <li><a class="text-white" href="#formulario">Formulário</a></li>

@@ -4,7 +4,7 @@
     <main>
         <section class="py-8 grid grid-cols-1 px-4 lg:grid-cols-2 gap-4 bg-brand-blue text-white rounded-b-3xl">
             <div class="content-center">
-                <img src="{{ asset('images/management.webp') }}" class="mx-auto" alt="Descrição da imagem" >
+                <img src="{{ asset('images/management.webp') }}" class="mx-auto" alt="Descrição da imagem">
             </div>
 
             <div class="max-w-2xl mx-auto lg:order-first flex flex-col justify-center items-center">
@@ -18,7 +18,7 @@
                     da sua equipe e leve sua empresa ao próximo nível com o Checar BPMN.
                 </p>
 
-                <form method="POST" action="{}" class="w-full space-y-4 lg:space-y-8 mt-5">
+                <form method="POST" action="{{ route('lead.store') }}" class="w-full space-y-4 lg:space-y-8 mt-5">
                     @csrf
 
                     <div class="relative">
@@ -75,6 +75,15 @@
                         </button>
                     </div>
                 </form>
+            </div>
+        </section>
+
+        <section id="video" class="py-16 flex justify-center items-center">
+            <div class="w-full max-w-4xl px-4">
+                <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </section>
 
@@ -164,10 +173,11 @@
                             <div class="swiper-slide">
                                 <div
                                     class="max-w-md mx-auto bg-[#D9792266] bg-opacity-10 mb-12 rounded-xl shadow-md overflow-hidden md:max-w-4xl">
-                                    <div class="md:flex p-8 md:space-x-8">
-                                        <div class="md:flex-shrink-0">
-                                            <img class="h-full w-full object-cover md:w-60 rounded"
-                                                src="{{ asset('images/logo-lagoa-santa.webp') }}" alt="Descrição da imagem">
+                                    <div class="space-y-4 p-8 md:flex md:space-x-8 md:space-y-0">
+                                        <div class="md:flex-shrink-0 flex justify-center items-center">
+                                            <img class="h-40 w-40 md:h-full md:w-full object-contain rounded"
+                                                src="{{ asset('images/logo-lagoa-santa.webp') }}"
+                                                alt="Descrição da imagem">
                                         </div>
                                         <div class="space-y-2">
                                             <h1 class="text-center text-xl font-medium">Prefeitura de Lagoa Santa</h1>
@@ -188,22 +198,21 @@
                             <div class="swiper-slide">
                                 <div
                                     class="max-w-md mx-auto bg-[#D9792266] bg-opacity-10 mb-12 rounded-xl shadow-md overflow-hidden md:max-w-4xl">
-                                    <div class="md:flex p-8 md:space-x-8">
-                                        <div class="md:flex-shrink-0">
-                                            <img class="h-full w-full object-contain rounded"
+                                    <div class="space-y-4 p-8 md:flex md:space-x-8 md:space-y-0">
+                                        <div class="md:flex-shrink-0 flex justify-center items-center">
+                                            <img class="h-40 w-40 md:h-full md:w-full object-contain rounded"
                                                 src="{{ asset('images/logo-v&c.webp') }}" alt="Descrição da imagem">
                                         </div>
                                         <div class="space-y-2">
                                             <h1 class="text-center text-xl font-medium">V&C</h1>
                                             <p class="mt-6 md:mt-0">
-                                                A prefeitura de <b>Lagoa Santa</b> (MG) fez uso do Checar BPMN para a gestão
-                                                e
-                                                fiscalização de obras e manutenção da cidade. A plataforma permite que os
-                                                cidadãos façam requerimentos através de uma denúncia informando o local, CEP
-                                                e entregando um protocolo. Dentro da plataforma, o Checar permite que os
-                                                usuários da prefeitura criem fluxos, ordem de serviço, formulários dinâmicos
-                                                e façam relatórios das ações, além de acompanhar as tarefas de forma
-                                                intuitiva em um histórico de ações.
+                                                A <b>V&C</b> é uma empresa de consultoria e auditoria que utiliza o Checar
+                                                BPMN para a gestão de processos internos e externos. A plataforma permite
+                                                que a empresa crie fluxos de trabalho personalizados, formulários dinâmicos
+                                                e relatórios detalhados para monitorar e otimizar suas operações. Com o
+                                                Checar, a V&C aumentou a eficiência de seus processos, reduziu custos e
+                                                melhorou a qualidade de seus serviços, garantindo a satisfação dos clientes
+                                                e o sucesso do negócio.
                                             </p>
                                         </div>
                                     </div>
@@ -212,15 +221,25 @@
                             <div class="swiper-slide">
                                 <div
                                     class="max-w-md mx-auto bg-[#D9792266] bg-opacity-10 mb-12 rounded-xl shadow-md overflow-hidden md:max-w-4xl">
-                                    <div class="md:flex p-8 md:space-x-8">
-                                        <div class="md:flex-shrink-0">
-                                            <img class="h-full w-full object-contain rounded"
-                                                src="{{ asset('images/logo-supliu-tech.webp') }}" alt="Descrição da imagem">
+                                    <div class="space-y-4 p-8 md:flex md:space-x-8 md:space-y-0">
+                                        <div class="md:flex-shrink-0 flex justify-center items-center">
+                                            <img class="h-40 w-40 md:h-full md:w-full object-contain rounded"
+                                                src="{{ asset('images/logo-supliu-tech.webp') }}"
+                                                alt="Descrição da imagem">
                                         </div>
                                         <div class="space-y-2">
                                             <h1 class="text-center text-xl font-medium">Supliu Tech</h1>
                                             <p class="mt-6 md:mt-0">
-                                                Empresa de desenvolvimento de aplicações web e mobile
+                                                A <b>Supliu Tech</b> é uma startup de tecnologia que utiliza o Checar BPMN
+                                                para a gestão de processos de desenvolvimento de software. A plataforma
+                                                permite que a empresa crie fluxos de trabalho personalizados, formulários
+                                                dinâmicos e relatórios detalhados para monitorar e otimizar suas operações.
+                                                Com
+                                                o Checar, a Supliu Tech aumentou a eficiência de seus processos, reduziu
+                                                custos
+                                                e melhorou a qualidade de seus serviços, garantindo a satisfação dos
+                                                clientes
+                                                e o sucesso do negócio.
                                             </p>
                                         </div>
                                     </div>
@@ -254,8 +273,7 @@
         <section id="send" class="bg-brand-blue rounded-t-3xl">
             <section id="formulario" class="grid grid-cols-1 py-8 px-4 lg:grid-cols-2 gap-4 text-white ">
                 <div class="justify-self-center">
-                    <img src="{{ asset('images/footer-img.webp') }}"
-                        alt="Descrição da imagem">
+                    <img src="{{ asset('images/footer-img.webp') }}" alt="Descrição da imagem">
                 </div>
                 <div class="max-w-2xl mx-auto flex flex-col justify-center items-center">
                     <h1 class="text-xl font-bold mb-4 lg:text-3xl 2xl:text-4xl">O melhor gestor de processos</h1>
@@ -266,7 +284,7 @@
                         sua equipe e leve sua empresa ao próximo nível!
                     </p>
 
-                    <form method="POST" action="{}" class="w-full space-y-4 mt-4 md:space-y-8">
+                    <form method="POST" action="{{ route('lead.store') }}" class="w-full space-y-4 mt-4 md:space-y-8">
                         @csrf
 
                         <div class="relative">
@@ -315,7 +333,7 @@
                         </div>
                         <div class="flex justify-center ">
                             <button type="submit"
-                                class="text-white bg-black font-bold py-2 px-12 bg-brand-blue-2 rounded-md mt-4 md:mt-0">
+                                class="text-white font-bold py-2 px-12 rounded-md bg-brand-blue-2 mt-4 md:mt-0">
                                 Quero eficiência na minha gestão
                             </button>
                         </div>
@@ -373,15 +391,20 @@
                 </div>
 
                 <script>
-                    document.querySelector('form').addEventListener('submit', function(e) {
-                        // e.preventDefault();
+                    document.querySelectorAll('form').forEach(form => {
+                        form.addEventListener('submit', function(e) {
+                            // Seleciona todos os inputs de telefone dentro do formulário atual
+                            e.currentTarget.querySelectorAll('.phone').forEach(input => {
+                                // Remove caracteres não numéricos do valor do input
+                                input.value = input.value.replace(/\D/g, '');
+                            });
 
-                        document.getElementById('phone').value = document.getElementById('phone').value.replace(/\D/g, '');
-
-                        var formData = new FormData(e.target);
-                        for (var pair of formData.entries()) {
-                            console.log(pair[0] + ', ' + pair[1]);
-                        }
+                            // Criação e log de FormData para depuração
+                            var formData = new FormData(e.target);
+                            for (var pair of formData.entries()) {
+                                console.log(pair[0] + ', ' + pair[1]);
+                            }
+                        });
                     });
 
                     var swiper = new Swiper(".mySwiper", {
